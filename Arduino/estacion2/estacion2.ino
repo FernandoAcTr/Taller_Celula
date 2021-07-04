@@ -20,7 +20,7 @@ void setup() {
  
 void loop() {
     // Esperamos 5 segundos entre medidas
-  delay(1000);
+  delay(5000);
  
   // Leemos la humedad relativa
   float h = dht.readHumidity();
