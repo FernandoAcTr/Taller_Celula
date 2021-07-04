@@ -19,7 +19,8 @@ while True:
             "luz": data[5],
         }
         print(dic)
-        resp = requests.post('http://localhost:4000/metrics', json=dic)
+        #resp = requests.post('http://localhost:4000/metrics', json=dic)
+        resp = requests.post('https://pythonapi-rest.herokuapp.com/metrics', json=dic)
         resp = resp.json()
         print(resp)
     except KeyboardInterrupt:
